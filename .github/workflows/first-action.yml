@@ -1,0 +1,15 @@
+# Worflows's name
+name: First Workflow
+
+# When to execute the workflow
+on: workflow_dispatch
+
+# List of jobs
+jobs:
+  first-job: # Job's name
+    runs-on: ubuntu-22.04 # Enviroment to run the job
+    steps: # List of steps to execute
+      - name: Print greeting # Descript name
+        run: echo "Hello World!" # Acction to exectue in the machine
+      - name: Print goodbye
+        run: echo "Done -bye!"
